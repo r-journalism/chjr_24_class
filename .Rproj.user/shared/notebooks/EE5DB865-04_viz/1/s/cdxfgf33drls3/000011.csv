@@ -1,0 +1,3 @@
+"0",""
+"0","ggplot(burgers, aes(x=where, y=time, fill=employee)) + "
+"0","  geom_col(position=""stack"") "
