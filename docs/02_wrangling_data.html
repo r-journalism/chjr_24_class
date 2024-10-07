@@ -421,7 +421,7 @@ Data Health Fellowship
 </section>
 <section id="before-we-begin-update-your-code" class="slide level2">
 <h2>Before we begin, update your code!</h2>
-<pre><code>remotes::install_github("r-journalism/chjr", upgrade="always", quiet=TRUE)</code></pre>
+<pre><code>remotes::install_github("r-journalism/chjr_24_class", upgrade="always", quiet=TRUE)</code></pre>
 </section>
 <section id="importing-data" class="slide level2">
 <h2>Importing data</h2>
@@ -432,7 +432,7 @@ Data Health Fellowship
 <span id="cb2-4"><a href=""></a></span>
 <span id="cb2-5"><a href=""></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 66,989 × 28
+<pre><code># A tibble: 67,040 × 28
    femaDeclarationString disasterNumber state declarationType
    &lt;chr&gt;                          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;          
  1 FM-5530-NV                      5530 NV    FM             
@@ -445,7 +445,7 @@ Data Health Fellowship
  8 FM-5524-CO                      5524 CO    FM             
  9 FM-5523-WY                      5523 WY    FM             
 10 FM-5522-CA                      5522 CA    FM             
-# ℹ 66,979 more rows
+# ℹ 67,030 more rows
 # ℹ 24 more variables: declarationDate &lt;dttm&gt;, fyDeclared &lt;dbl&gt;,
 #   incidentType &lt;chr&gt;, declarationTitle &lt;chr&gt;, ihProgramDeclared &lt;dbl&gt;,
 #   iaProgramDeclared &lt;dbl&gt;, paProgramDeclared &lt;dbl&gt;, hmProgramDeclared &lt;dbl&gt;,
@@ -467,7 +467,7 @@ Data Health Fellowship
 <span id="cb4-2"><a href=""></a></span>
 <span id="cb4-3"><a href=""></a><span class="fu">glimpse</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Rows: 66,989
+<pre><code>Rows: 67,040
 Columns: 28
 $ femaDeclarationString    &lt;chr&gt; "FM-5530-NV", "FM-5529-OR", "FM-5528-OR", "FM…
 $ disasterNumber           &lt;dbl&gt; 5530, 5529, 5528, 5527, 5526, 5525, 5525, 552…
@@ -514,7 +514,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <div class="fragment">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "1953-05-02 UTC" "2024-09-26 UTC"</code></pre>
+<pre><code>[1] "1953-05-02 UTC" "2024-10-05 UTC"</code></pre>
 </div>
 </div>
 </div>
@@ -526,7 +526,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <div class="cell-output cell-output-stdout">
 <pre><code>
   AK   AL   AR   AS   AZ   CA   CO   CT   DC   DE   FL   FM   GA   GU   HI   IA 
- 333 1742 1624   76  343 1678  664  264   23   53 2652   31 2612   22  108 1922 
+ 333 1742 1624   76  343 1678  664  264   23   53 2703   31 2612   22  108 1922 
   ID   IL   IN   KS   KY   LA   MA   MD   ME   MH   MI   MN   MO   MP   MS   MT 
  369 1313 1464 1842 2762 2586  414  447 1065   53  805 1621 2750   76 1945  640 
   NC   ND   NE   NH   NJ   NM   NV   NY   OH   OK   OR   PA   PR   PW   RI   SC 
@@ -625,7 +625,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  1 TX         5350
  2 KY         2762
  3 MO         2750
- 4 FL         2652
+ 4 FL         2703
  5 GA         2612
  6 LA         2586
  7 VA         2572
@@ -656,7 +656,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  1 TX         5350
  2 KY         2762
  3 MO         2750
- 4 FL         2652
+ 4 FL         2703
  5 GA         2612
  6 LA         2586
  7 VA         2572
@@ -680,7 +680,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  1 TX         5350
  2 KY         2762
  3 MO         2750
- 4 FL         2652
+ 4 FL         2703
  5 GA         2612
  6 LA         2586
  7 VA         2572
@@ -732,7 +732,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <div class="cell">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href=""></a><span class="fu">glimpse</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Rows: 66,989
+<pre><code>Rows: 67,040
 Columns: 28
 $ femaDeclarationString    &lt;chr&gt; "FM-5530-NV", "FM-5529-OR", "FM-5528-OR", "FM…
 $ disasterNumber           &lt;dbl&gt; 5530, 5529, 5528, 5527, 5526, 5525, 5525, 552…
@@ -771,7 +771,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href=""></a>df <span class="sc">|&gt;</span> </span>
 <span id="cb26-2"><a href=""></a>  <span class="fu">filter</span>(incidentType<span class="sc">==</span><span class="st">"Hurricane"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 13,534 × 28
+<pre><code># A tibble: 13,585 × 28
    femaDeclarationString disasterNumber state declarationType
    &lt;chr&gt;                          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;          
  1 DR-4798-TX                      4798 TX    DR             
@@ -784,7 +784,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 DR-4798-TX                      4798 TX    DR             
  9 DR-4798-TX                      4798 TX    DR             
 10 DR-4798-TX                      4798 TX    DR             
-# ℹ 13,524 more rows
+# ℹ 13,575 more rows
 # ℹ 24 more variables: declarationDate &lt;dttm&gt;, fyDeclared &lt;dbl&gt;,
 #   incidentType &lt;chr&gt;, declarationTitle &lt;chr&gt;, ihProgramDeclared &lt;dbl&gt;,
 #   iaProgramDeclared &lt;dbl&gt;, paProgramDeclared &lt;dbl&gt;, hmProgramDeclared &lt;dbl&gt;,
@@ -812,7 +812,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <div class="cell">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href=""></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 66,989 × 28
+<pre><code># A tibble: 67,040 × 28
    femaDeclarationString disasterNumber state declarationType
    &lt;chr&gt;                          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;          
  1 FM-5530-NV                      5530 NV    FM             
@@ -825,7 +825,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 FM-5524-CO                      5524 CO    FM             
  9 FM-5523-WY                      5523 WY    FM             
 10 FM-5522-CA                      5522 CA    FM             
-# ℹ 66,979 more rows
+# ℹ 67,030 more rows
 # ℹ 24 more variables: declarationDate &lt;dttm&gt;, fyDeclared &lt;dbl&gt;,
 #   incidentType &lt;chr&gt;, declarationTitle &lt;chr&gt;, ihProgramDeclared &lt;dbl&gt;,
 #   iaProgramDeclared &lt;dbl&gt;, paProgramDeclared &lt;dbl&gt;, hmProgramDeclared &lt;dbl&gt;,
@@ -841,7 +841,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href=""></a>df <span class="sc">|&gt;</span> </span>
 <span id="cb30-2"><a href=""></a>  <span class="fu">filter</span>(incidentType<span class="sc">==</span><span class="st">"Hurricane"</span> <span class="sc">|</span> incidentType <span class="sc">==</span> <span class="st">"Fire"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 17,268 × 28
+<pre><code># A tibble: 17,319 × 28
    femaDeclarationString disasterNumber state declarationType
    &lt;chr&gt;                          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;          
  1 FM-5530-NV                      5530 NV    FM             
@@ -854,7 +854,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 FM-5524-CO                      5524 CO    FM             
  9 FM-5523-WY                      5523 WY    FM             
 10 FM-5522-CA                      5522 CA    FM             
-# ℹ 17,258 more rows
+# ℹ 17,309 more rows
 # ℹ 24 more variables: declarationDate &lt;dttm&gt;, fyDeclared &lt;dbl&gt;,
 #   incidentType &lt;chr&gt;, declarationTitle &lt;chr&gt;, ihProgramDeclared &lt;dbl&gt;,
 #   iaProgramDeclared &lt;dbl&gt;, paProgramDeclared &lt;dbl&gt;, hmProgramDeclared &lt;dbl&gt;,
@@ -928,7 +928,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <span id="cb36-2"><a href=""></a>  <span class="fu">select</span>(femaDeclarationString, state, </span>
 <span id="cb36-3"><a href=""></a>         declarationDate, incidentType)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 66,989 × 4
+<pre><code># A tibble: 67,040 × 4
    femaDeclarationString state declarationDate     incidentType
    &lt;chr&gt;                 &lt;chr&gt; &lt;dttm&gt;              &lt;chr&gt;       
  1 FM-5530-NV            NV    2024-08-12 00:00:00 Fire        
@@ -941,7 +941,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 FM-5524-CO            CO    2024-07-31 00:00:00 Fire        
  9 FM-5523-WY            WY    2024-07-30 00:00:00 Fire        
 10 FM-5522-CA            CA    2024-07-27 00:00:00 Fire        
-# ℹ 66,979 more rows</code></pre>
+# ℹ 67,030 more rows</code></pre>
 </div>
 </div>
 </section>
@@ -1056,7 +1056,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>Rows: 66,989
+<pre><code>Rows: 67,040
 Columns: 28
 $ femaDeclarationString    &lt;chr&gt; "FM-5530-NV", "FM-5529-OR", "FM-5528-OR", "FM…
 $ disasterNumber           &lt;dbl&gt; 5530, 5529, 5528, 5527, 5526, 5525, 5525, 552…
@@ -1098,7 +1098,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <div class="cell">
 <div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href=""></a>df </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 66,989 × 28
+<pre><code># A tibble: 67,040 × 28
    femaDeclarationString disasterNumber state declarationType
    &lt;chr&gt;                          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;          
  1 FM-5530-NV                      5530 NV    FM             
@@ -1111,7 +1111,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 FM-5524-CO                      5524 CO    FM             
  9 FM-5523-WY                      5523 WY    FM             
 10 FM-5522-CA                      5522 CA    FM             
-# ℹ 66,979 more rows
+# ℹ 67,030 more rows
 # ℹ 24 more variables: declarationDate &lt;dttm&gt;, fyDeclared &lt;dbl&gt;,
 #   incidentType &lt;chr&gt;, declarationTitle &lt;chr&gt;, ihProgramDeclared &lt;dbl&gt;,
 #   iaProgramDeclared &lt;dbl&gt;, paProgramDeclared &lt;dbl&gt;, hmProgramDeclared &lt;dbl&gt;,
@@ -1128,7 +1128,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <span id="cb51-2"><a href=""></a>  <span class="fu">select</span>(femaDeclarationString, state, </span>
 <span id="cb51-3"><a href=""></a>         declarationDate, incidentType) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 66,989 × 4
+<pre><code># A tibble: 67,040 × 4
    femaDeclarationString state declarationDate     incidentType
    &lt;chr&gt;                 &lt;chr&gt; &lt;dttm&gt;              &lt;chr&gt;       
  1 FM-5530-NV            NV    2024-08-12 00:00:00 Fire        
@@ -1141,7 +1141,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 FM-5524-CO            CO    2024-07-31 00:00:00 Fire        
  9 FM-5523-WY            WY    2024-07-30 00:00:00 Fire        
 10 FM-5522-CA            CA    2024-07-27 00:00:00 Fire        
-# ℹ 66,979 more rows</code></pre>
+# ℹ 67,030 more rows</code></pre>
 </div>
 </div>
 </section>
@@ -1153,7 +1153,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <span id="cb53-3"><a href=""></a>         declarationDate, incidentType) <span class="sc">|&gt;</span> </span>
 <span id="cb53-4"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">year=</span><span class="fu">year</span>(declarationDate))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 66,989 × 5
+<pre><code># A tibble: 67,040 × 5
    femaDeclarationString state declarationDate     incidentType  year
    &lt;chr&gt;                 &lt;chr&gt; &lt;dttm&gt;              &lt;chr&gt;        &lt;dbl&gt;
  1 FM-5530-NV            NV    2024-08-12 00:00:00 Fire          2024
@@ -1166,7 +1166,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 FM-5524-CO            CO    2024-07-31 00:00:00 Fire          2024
  9 FM-5523-WY            WY    2024-07-30 00:00:00 Fire          2024
 10 FM-5522-CA            CA    2024-07-27 00:00:00 Fire          2024
-# ℹ 66,979 more rows</code></pre>
+# ℹ 67,030 more rows</code></pre>
 </div>
 </div>
 </section>
@@ -1175,7 +1175,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <div class="cell">
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href=""></a>df </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 66,989 × 28
+<pre><code># A tibble: 67,040 × 28
    femaDeclarationString disasterNumber state declarationType
    &lt;chr&gt;                          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;          
  1 FM-5530-NV                      5530 NV    FM             
@@ -1188,7 +1188,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 FM-5524-CO                      5524 CO    FM             
  9 FM-5523-WY                      5523 WY    FM             
 10 FM-5522-CA                      5522 CA    FM             
-# ℹ 66,979 more rows
+# ℹ 67,030 more rows
 # ℹ 24 more variables: declarationDate &lt;dttm&gt;, fyDeclared &lt;dbl&gt;,
 #   incidentType &lt;chr&gt;, declarationTitle &lt;chr&gt;, ihProgramDeclared &lt;dbl&gt;,
 #   iaProgramDeclared &lt;dbl&gt;, paProgramDeclared &lt;dbl&gt;, hmProgramDeclared &lt;dbl&gt;,
@@ -1207,7 +1207,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <pre><code># A tibble: 1 × 1
   disasters
       &lt;int&gt;
-1     66989</code></pre>
+1     67040</code></pre>
 </div>
 </div>
 </section>
@@ -1219,7 +1219,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <span id="cb59-3"><a href=""></a>         declarationDate, incidentType) <span class="sc">|&gt;</span> </span>
 <span id="cb59-4"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">year=</span><span class="fu">year</span>(declarationDate))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 66,989 × 5
+<pre><code># A tibble: 67,040 × 5
    femaDeclarationString state declarationDate     incidentType  year
    &lt;chr&gt;                 &lt;chr&gt; &lt;dttm&gt;              &lt;chr&gt;        &lt;dbl&gt;
  1 FM-5530-NV            NV    2024-08-12 00:00:00 Fire          2024
@@ -1232,7 +1232,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 FM-5524-CO            CO    2024-07-31 00:00:00 Fire          2024
  9 FM-5523-WY            WY    2024-07-30 00:00:00 Fire          2024
 10 FM-5522-CA            CA    2024-07-27 00:00:00 Fire          2024
-# ℹ 66,979 more rows</code></pre>
+# ℹ 67,030 more rows</code></pre>
 </div>
 </div>
 </section>
@@ -1357,7 +1357,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <span id="cb69-3"><a href=""></a>         declarationDate, incidentType) <span class="sc">|&gt;</span> </span>
 <span id="cb69-4"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">year=</span><span class="fu">year</span>(declarationDate))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 66,989 × 5
+<pre><code># A tibble: 67,040 × 5
    femaDeclarationString state declarationDate     incidentType  year
    &lt;chr&gt;                 &lt;chr&gt; &lt;dttm&gt;              &lt;chr&gt;        &lt;dbl&gt;
  1 FM-5530-NV            NV    2024-08-12 00:00:00 Fire          2024
@@ -1370,7 +1370,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 FM-5524-CO            CO    2024-07-31 00:00:00 Fire          2024
  9 FM-5523-WY            WY    2024-07-30 00:00:00 Fire          2024
 10 FM-5522-CA            CA    2024-07-27 00:00:00 Fire          2024
-# ℹ 66,979 more rows</code></pre>
+# ℹ 67,030 more rows</code></pre>
 </div>
 </div>
 </section>
@@ -1392,7 +1392,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 <span id="cb71-13"><a href=""></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"2020+"</span></span>
 <span id="cb71-14"><a href=""></a>  ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 66,989 × 6
+<pre><code># A tibble: 67,040 × 6
    femaDeclarationString state declarationDate     incidentType  year year_group
    &lt;chr&gt;                 &lt;chr&gt; &lt;dttm&gt;              &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;     
  1 FM-5530-NV            NV    2024-08-12 00:00:00 Fire          2024 2020+     
@@ -1405,7 +1405,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
  8 FM-5524-CO            CO    2024-07-31 00:00:00 Fire          2024 2020+     
  9 FM-5523-WY            WY    2024-07-30 00:00:00 Fire          2024 2020+     
 10 FM-5522-CA            CA    2024-07-27 00:00:00 Fire          2024 2020+     
-# ℹ 66,979 more rows</code></pre>
+# ℹ 67,030 more rows</code></pre>
 </div>
 </div>
 </section>
@@ -1439,7 +1439,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 5 1990-1999        8806
 6 2000-2009       16348
 7 2010-2019       12086
-8 2020+           21737</code></pre>
+8 2020+           21788</code></pre>
 </div>
 </div>
 </section>
@@ -1457,7 +1457,7 @@ $ id                       &lt;chr&gt; "f15a7a79-f1c3-41bb-8a5c-c05fbae34423", "
 5 1990-1999        8806
 6 2000-2009       16348
 7 2010-2019       12086
-8 2020+           21737</code></pre>
+8 2020+           21788</code></pre>
 </div>
 </div>
 </section>

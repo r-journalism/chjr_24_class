@@ -28,7 +28,7 @@ title-slide-attributes:
 
 ## Before we begin, update your code!
 ```
-remotes::install_github("r-journalism/chjr", upgrade="always", quiet=TRUE)
+remotes::install_github("r-journalism/chjr_24_class", upgrade="always", quiet=TRUE)
 ```
 
 ## Importing data

@@ -95,7 +95,7 @@ Any code we type in here can be run in the console. Highlight and hit the `Run` 
 ![](slide_images/run_code.png?classes=shadow){width=100%}
 
 
-# Best habits for new projects
+## Best habits for new projects
 
 Your *working directory* is the folder on your computer in which you are currently working. When you ask R to open a certain file, it will look in the working directory for this file, and when you tell R to save a data file or figure, it will save it in the working directory.
 
